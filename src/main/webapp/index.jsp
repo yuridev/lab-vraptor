@@ -3,6 +3,7 @@
 	<title>VRaptor Scaffold Project</title>
 </head>
 <body>
-	It works!!
+	<a href="clientes">Cadastro de clientes</a>
+	a#id-link>img
 </body>
 </html>

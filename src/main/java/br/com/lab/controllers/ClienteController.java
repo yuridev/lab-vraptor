@@ -65,7 +65,7 @@ public class ClienteController {
 		return repository.find(cliente.getId());
 	}
 
-	@Delete("/clientes/{cliente.id}")
+	@Get("/clientes/delete/{cliente.id}")
 	public void destroy(Cliente cliente) {
 		repository.destroy(repository.find(cliente.getId()));
 		result.redirectTo(this).index();  
