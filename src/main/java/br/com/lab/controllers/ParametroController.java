@@ -65,7 +65,7 @@ public class ParametroController {
 		return repository.find(parametro.getId());
 	}
 
-	@Delete("/parametros/{parametro.id}")
+	@Get("/parametros/delete/{parametro.id}")
 	public void destroy(Parametro parametro) {
 		repository.destroy(repository.find(parametro.getId()));
 		result.redirectTo(this).index();  
