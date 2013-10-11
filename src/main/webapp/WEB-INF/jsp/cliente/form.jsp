@@ -1,3 +1,9 @@
+<script>
+	$(document).ready(function(){
+		$('.cpf').mask('000.000.000-00', {reverse: true});
+	});
+</script>
+
 <form class="form-horizontal"
 	action="${pageContext.request.contextPath}/clientes" method="post">
 	<c:if test="${not empty cliente.id}">
@@ -40,8 +46,7 @@
 		<div class="control-group">
 			<div class="controls">
 				<input id="cliente.cpfCnpj" name="cliente.cpfCnpj" type="text"
-					placeholder="CPF/CNPJ" class="input-xlarge" required=""
-					data-mask="999.999.999-99">
+					placeholder="CPF/CNPJ" class="input-xlarge cpf" required="">
 
 			</div>
 		</div>
