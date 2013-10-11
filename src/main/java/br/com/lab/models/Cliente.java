@@ -1,5 +1,7 @@
 package br.com.lab.models;
 
+import br.com.lab.enumeradores.Estado;
+
 @javax.persistence.Entity
 public class Cliente extends Entity {
 
@@ -8,6 +10,9 @@ public class Cliente extends Entity {
 	private String tipoPessoa;
 	private String telefone;
 	private String email;
+	private String endereco;
+	private String cidade;
+	private Estado estado;
 
 	public void setNome(String nome) {
 		this.nome = nome;
@@ -48,5 +53,29 @@ public class Cliente extends Entity {
 	public String getEmail() {
 		return email;
 	}
+
+    public String getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(String endereço) {
+        this.endereco = endereço;
+    }
+
+    public String getCidade() {
+        return cidade;
+    }
+
+    public void setCidade(String cidade) {
+        this.cidade = cidade;
+    }
+
+    public Estado getEstado() {
+        return estado;
+    }
+
+    public void setEstado(Estado estado) {
+        this.estado = estado;
+    }
 
 }

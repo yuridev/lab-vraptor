@@ -5,11 +5,10 @@
 
 	<a href="${pageContext.request.contextPath}/clientes/new"><img title="Novo cliente" src="imagens/novo_cliente.png"></a> 
 
-	<table class="table table-hover">
+	<table class="table table-striped table-bordered table-condensed">
 		<caption><h3>Cadastro de clientes</h3></caption>
 		<tr>
-			<th></th>
-			<th>Nome</th>
+			<th colspan="2">Nome</th>
 			<th>CPF/CPNJ</th>
 			<th>Telefone</th>
 			<th>Email</th>
@@ -18,8 +17,7 @@
 	
 		<c:forEach items="${clienteList}" var="cliente">
 			<tr>
-				<td></td>
-				<td><a href="${pageContext.request.contextPath}/clientes/${cliente.id}">${cliente.nome}</a></td>
+				<td colspan="2"><a href="${pageContext.request.contextPath}/clientes/${cliente.id}">${cliente.nome}</a></td>
 				<td>${cliente.cpfCnpj}</td>
 				<td>${cliente.telefone}</td>
 				<td>${cliente.email}</td>

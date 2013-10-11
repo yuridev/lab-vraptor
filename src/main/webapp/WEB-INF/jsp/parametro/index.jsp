@@ -4,7 +4,7 @@
 <body>
 
 	<a href="${pageContext.request.contextPath}/parametros/new"><img alt="Novo" src="${pageContext.request.contextPath}/imagens/add.png"></a> 
-	<table class="table table-hover">
+	<table class="table table-striped table-bordered table-condensed">
 		<caption><h3>Cadastro de Param&ecirc;tros</h3></caption>
 		<tr>
 			<th>Nome</th>
@@ -21,9 +21,9 @@
 				<td>${parametro.lq}</td>
 				<td>${parametro.metodo}</td>
 				<td colspan="2">
-					<a href="${pageContext.request.contextPath}/parametros/${cliente.id}/edit"><img src="imagens/editar.png" title="Editar registro"/></a>
+					<a href="${pageContext.request.contextPath}/parametros/${parametro.id}/edit"><img src="imagens/editar.png" title="Editar registro"/></a>
 
-					<a href="${pageContext.request.contextPath}/parametros/delete/${cliente.id}"><img src="imagens/excluir.png" title="Excluir registro"/></a>
+					<a href="${pageContext.request.contextPath}/parametros/delete/${parametro.id}"><img src="imagens/excluir.png" title="Excluir registro"/></a>
 				</td>				
 			</tr>
 		</c:forEach>

@@ -4,7 +4,8 @@
 <hibernate-configuration>
 	<session-factory>
 		<property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
-		<property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/app1</property>
+<!-- 		<property name="hibernate.connection.url">jdbc:postgresql://amcf.no-ip.biz:5432/kbf</property> -->
+		<property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/kbf</property>
 		<property name="hibernate.connection.username">postgres</property>
 		<property name="connection.password">postgres</property>
 		<property name="connection.pool_size">1</property>
@@ -13,5 +14,6 @@
 		<property name="hbm2ddl.auto">update</property>
 		<mapping class='br.com.lab.models.Cliente'/>
 		<mapping class='br.com.lab.models.Parametro'/>
+		<mapping class='br.com.lab.models.Orcamento'/>
 	</session-factory>
 </hibernate-configuration>
