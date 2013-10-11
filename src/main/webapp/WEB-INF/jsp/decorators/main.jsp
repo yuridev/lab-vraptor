@@ -9,13 +9,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="">
 <meta name="author" content="">
-<title><decorator:title default="BKF Lab - Software de gerenciamento de orçamentos e laudos" /></title>
+<title><decorator:title default="BKF Lab - Software de gerenciamento de orï¿½amentos e laudos" /></title>
 <!--
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/stylesheets/application.css"/>
     -->
 <link
 	href="${pageContext.request.contextPath}/bootstrap/css/bootstrap.min.css"
 	rel="stylesheet" type="text/css"></link>
+<script src="${pageContext.request.contextPath}/bootstrap/js/jquery.mask.min.js"></script>
 <style type="text/css">
 body {
 	padding-top: 60px;
